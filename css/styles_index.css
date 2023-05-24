@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+:root {
+  --background-first-color: #5b6d5b;
+  --background-second-color: #ca8a8b;
+  --background-third-color: #e2bcb7;
+  --background-fourth-color: #f6e6e4;
+  --font-family: "Roboto", sans-serif;
+  --letter-spacing: 0.01em;
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  letter-spacing: var(--letter-spacing);
+  background-color: rgb(237, 236, 236);
+  position: relative;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+}
+
+p,
+ul {
+  font-size: 14px;
+  text-align: justify;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+a {
+  transition: color var(--transition), background-color var(--transition);
+  text-decoration: none;
+}
+
+/* HEADER */
+
+header li + li {
+  margin-left: 20px;
+}
+
+/* MAIN */
+
+section {
+  width: 350px;
+  height: 350px;
+  background-color: rgb(187, 152, 155);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: absolute;
+}
+
+.first-section {
+  top: 95px;
+  left: 480px;
+}
+
+.third-section {
+  bottom: 50px;
+  left: 710px;
+}
+
+.second-section {
+  top: 40px;
+  left: 850px;
+}
+
+.circle {
+  width: 320px;
+  height: 320px;
+  background-color: rgb(187, 152, 155);
+  border: 12px solid rgb(223, 211, 212);
+  /* border: 15px solid rgb(212, 187, 189); */
+  border-radius: 50%;
+  transition: background-color, var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.circle p {
+  color: white;
+  opacity: 0.9;
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 150px;
+}
+
+section:hover .circle {
+  background-color: rgb(212, 187, 189);
+  cursor: pointer;
+}
+
+.svg {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 40%;
+}
+
+svg {
+  color: rgb(215, 186, 186);
+  opacity: 0.5;
+  width: 250px;
+  height: 250px;
+}
+
+.circle p {
+  position: absolute;
+  z-index: 2;
+}
+
+.second-section .circle p {
+  margin-top: 5px;
+  font-size: 24px;
+}
+
+.circle img {
+  position: absolute;
+  z-index: 1;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  opacity: 0.3;
+}
+
+/* BACKGROUND DECORATIONS */
+
+body {
+  position: relative;
+}
+
+.decoration {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgb(238, 211, 215);
+  opacity: 0.5;
+}
+
+.d-large-first,
+.d-large-second {
+  width: 200px;
+  height: 200px;
+}
+
+.d-large-first {
+  left: 20px;
+  top: -30px;
+}
+
+.d-large-second {
+  right: -20px;
+  bottom: 100px;
+}
+
+.d-medium-first,
+.d-medium-second {
+  width: 150px;
+  height: 150px;
+}
+
+.d-medium-first {
+  left: 20px;
+  top: 130px;
+}
+
+.d-medium-second {
+  bottom: 20px;
+  right: 50px;
+}
+
+.d-small-first,
+.d-small-second {
+  width: 150px;
+  height: 150px;
+}
+
+.d-small-first {
+  left: 160px;
+  top: 10px;
+}
+
+.d-small-second {
+  bottom: 225px;
+  right: 50px;
+}
+
+/* FOOTER */
