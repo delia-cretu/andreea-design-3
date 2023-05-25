@@ -88,49 +88,47 @@ section {
   border-radius: 50%;
   transition: background-color, var(--transition);
   display: flex;
+  flex-direction: column-reverse;
+  gap: 10px;
   align-items: center;
   justify-content: center;
-  position: relative;
 }
 
 .circle p {
   color: white;
-  opacity: 0.9;
+  opacity: 0.7;
   font-size: 26px;
   font-weight: bold;
-  margin-top: 150px;
+  transition: color var(--transition);
+}
+
+.icon:last-of-type {
+  margin-top: 10px;
+}
+
+.icon svg {
+  color: white;
+  opacity: 0.5;
+  width: 150px;
+  height: 150px;
+  transition: color var(--transition);
 }
 
 section:hover .circle {
-  background-color: rgb(212, 187, 189);
+  /* background-color: rgb(212, 187, 189); */
+  background-color: rgb(223, 211, 212);
   cursor: pointer;
 }
-
-.svg {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: 40%;
+section:hover svg {
+  color: rgb(177, 140, 144);
+  opacity: 1;
+}
+section:hover p {
+  color: rgb(169, 131, 135);
+  opacity: 1;
 }
 
-svg {
-  color: rgb(215, 186, 186);
-  opacity: 0.5;
-  width: 250px;
-  height: 250px;
-}
-
-.circle p {
-  position: absolute;
-  z-index: 2;
-}
-
-.second-section .circle p {
-  margin-top: 5px;
-  font-size: 24px;
-}
-
-.circle img {
+/* .circle img {
   position: absolute;
   z-index: 1;
   width: 300px;
@@ -138,7 +136,7 @@ svg {
   border-radius: 50%;
   overflow: hidden;
   opacity: 0.3;
-}
+} */
 
 /* BACKGROUND DECORATIONS */
 
