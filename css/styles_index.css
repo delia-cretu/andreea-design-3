@@ -52,6 +52,13 @@ header li + li {
 
 /* MAIN */
 
+main {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
 section {
   width: 350px;
   height: 350px;
@@ -61,10 +68,10 @@ section {
   align-items: center;
   justify-content: center;
   color: white;
-  position: absolute;
+  /* position: absolute; */
 }
 
-.first-section {
+/* .first-section {
   top: 95px;
   left: 480px;
 }
@@ -77,7 +84,7 @@ section {
 .second-section {
   top: 40px;
   left: 850px;
-}
+} */
 
 .circle {
   width: 320px;
